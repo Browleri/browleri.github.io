@@ -55,8 +55,10 @@ body {
   padding: 32px clamp(20px, 4vw, 60px) 48px;
 }
 
+/* These things are a bit weird and I don't like them that much */
 .page::before,
 .page::after {
+  display:none /* this prevents this from rendering */
   content: "";
   position: absolute;
   inset: auto;

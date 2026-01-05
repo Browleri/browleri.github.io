@@ -102,10 +102,10 @@ const translations = {
     theme: "Teema",
     light: "Vaalea",
     dark: "Tumma",
-    pageTitle: "Junior-kehittajan portfolio",
-    metaDescription: "Junior-kehittajan portfolio projekteilla, koulutuksella ja yhteystiedoilla.",
+    pageTitle: "Junior-kehittäjän portfolio",
+    metaDescription: "Junior-kehittäjän portfolio projekteilla, koulutuksella ja yhteystiedoilla.",
     navLabel: "Portfolion osiot",
-    eyebrow: "Junior-kehittajan portfolio",
+    eyebrow: "Junior-kehittäjän portfolio",
     subtitle:
       "Rakennan kestavia, saavutettavia web-kokemuksia painottaen suorituskykya, selkeaa arkkitehtuuria ja harkittuja UI-yksityiskohtia.",
     statusOpen: "Haen harjoittelu- ja junior-rooleja",

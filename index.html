@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Junior Developer Portfolio</title>
-  <meta name="description" content="Junior developer portfolio with projects, education, and contact details." />
+  <title data-i18n="pageTitle">Junior Developer Portfolio</title>
+  <meta name="description" content="Junior developer portfolio with projects, education, and contact details." data-i18n-content="metaDescription" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -16,52 +16,57 @@
       <div class="brand">
         <div class="logo">MK</div>
         <div>
-          <p class="eyebrow">Junior Developer Portfolio</p>
+          <p class="eyebrow" data-i18n="eyebrow">Junior Developer Portfolio</p>
           <h1>Martti Koivisto</h1>
-          <p class="subtitle">
+          <p class="subtitle" data-i18n="subtitle">
             Building resilient, accessible web experiences with a focus on performance, clean architecture, and
             thoughtful UI details.
           </p>
         </div>
       </div>
       <div class="header-actions">
-        <div class="status-pill">Open to internships and junior roles</div>
-        <button class="theme-toggle" type="button" aria-pressed="false">
-          <span class="theme-label">Theme: Light</span>
-        </button>
+        <div class="status-pill" data-i18n="statusOpen">Open to internships and junior roles</div>
+        <div class="toggle-row">
+          <button class="theme-toggle" type="button" aria-pressed="false">
+            <span class="theme-label">Theme: Light</span>
+          </button>
+          <button class="language-toggle" type="button" aria-pressed="false">
+            <span class="language-label">Language: EN</span>
+          </button>
+        </div>
       </div>
     </header>
 
     <section class="hero">
       <div class="hero-left reveal" style="--delay: 140ms;">
-        <h2>Creative engineering with a product mindset</h2>
-        <p class="lead">
+        <h2 data-i18n="heroHeading">Creative engineering with a product mindset</h2>
+        <p class="lead" data-i18n="heroLead">
           I am a junior developer who loves turning complex requirements into simple, elegant flows. I build with
           modern tooling, write clean documentation, and keep an eye on performance budgets from the first commit.
         </p>
         <div class="hero-meta">
           <div class="meta-card">
             <strong>8+</strong>
-            <span>Production-ready UI components</span>
+            <span data-i18n="metaComponents">Production-ready UI components</span>
           </div>
           <div class="meta-card">
             <strong>3</strong>
-            <span>Team projects shipped this year</span>
+            <span data-i18n="metaProjects">Team projects shipped this year</span>
           </div>
           <div class="meta-card">
             <strong>95%</strong>
-            <span>Lighthouse accessibility scores</span>
+            <span data-i18n="metaAccessibility">Lighthouse accessibility scores</span>
           </div>
         </div>
         <div class="cta-row">
-          <a class="btn primary" href="#contact" data-tab-link="contact">Contact me</a>
-          <a class="btn ghost" href="#projects" data-tab-link="projects">View projects</a>
+          <a class="btn primary" href="#contact" data-tab-link="contact" data-i18n="ctaContact">Contact me</a>
+          <a class="btn ghost" href="#projects" data-tab-link="projects" data-i18n="ctaProjects">View projects</a>
         </div>
       </div>
 
       <div class="profile-stack reveal" style="--delay: 220ms;">
         <div class="card">
-          <h3>Stack focus</h3>
+          <h3 data-i18n="stackFocus">Stack focus</h3>
           <ul class="tag-list">
             <li>TypeScript</li>
             <li>React</li>
@@ -72,8 +77,8 @@
           </ul>
         </div>
         <div class="card signal-card">
-          <h3>Quick pitch</h3>
-          <p>
+          <h3 data-i18n="quickPitch">Quick pitch</h3>
+          <p data-i18n="quickPitchText">
             I enjoy pairing thoughtful UX with reliable engineering. Ask me about my design system experiments,
             deployment automation, or building a11y-first components.
           </p>
@@ -81,20 +86,20 @@
       </div>
     </section>
 
-    <nav class="tabs" role="tablist" aria-label="Portfolio sections">
-      <button class="tab" type="button" role="tab" aria-selected="true" aria-controls="panel-about" id="tab-about" data-tab="about">
+    <nav class="tabs" role="tablist" aria-label="Portfolio sections" data-i18n-aria="navLabel">
+      <button class="tab" type="button" role="tab" aria-selected="true" aria-controls="panel-about" id="tab-about" data-tab="about" data-i18n="tabAbout">
         About me
       </button>
-      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-projects" id="tab-projects" data-tab="projects">
+      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-projects" id="tab-projects" data-tab="projects" data-i18n="tabProjects">
         Projects
       </button>
-      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-education" id="tab-education" data-tab="education">
+      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-education" id="tab-education" data-tab="education" data-i18n="tabEducation">
         Education
       </button>
-      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-certificates" id="tab-certificates" data-tab="certificates">
+      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-certificates" id="tab-certificates" data-tab="certificates" data-i18n="tabCertificates">
         Certificates
       </button>
-      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-contact" id="tab-contact" data-tab="contact">
+      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-contact" id="tab-contact" data-tab="contact" data-i18n="tabContact">
         Contact me
       </button>
     </nav>
@@ -103,22 +108,22 @@
       <section class="tab-panel" id="panel-about" role="tabpanel" aria-labelledby="tab-about" data-panel="about">
         <div class="panel-grid">
           <div class="card">
-            <h3>About me</h3>
-            <p class="lead" style="margin: 0;">
+            <h3 data-i18n="aboutHeading">About me</h3>
+            <p class="lead" style="margin: 0;" data-i18n="aboutBody">
               I am a junior full-stack developer with a background in product design and a drive to build clean, reliable
               interfaces. I thrive in collaborative teams and enjoy translating messy problem spaces into structured plans.
             </p>
           </div>
           <div class="card">
-            <h3>What I bring</h3>
+            <h3 data-i18n="bringHeading">What I bring</h3>
             <ul class="list">
-              <li>Strong communication and documentation habits to keep teams aligned.</li>
-              <li>Accessibility-first UI thinking, including keyboard testing and semantic HTML.</li>
-              <li>Curiosity for backend systems, APIs, and deployment pipelines.</li>
+              <li data-i18n="bringItem1">Strong communication and documentation habits to keep teams aligned.</li>
+              <li data-i18n="bringItem2">Accessibility-first UI thinking, including keyboard testing and semantic HTML.</li>
+              <li data-i18n="bringItem3">Curiosity for backend systems, APIs, and deployment pipelines.</li>
             </ul>
           </div>
           <div class="card">
-            <h3>Toolkit highlights</h3>
+            <h3 data-i18n="toolkitHeading">Toolkit highlights</h3>
             <ul class="tag-list">
               <li>Storybook</li>
               <li>Next.js</li>
@@ -135,8 +140,8 @@
         <div class="projects-grid">
           <article class="card project-card">
             <h4>Atlas UI Kit</h4>
-            <p class="project-meta">Design system • React • TypeScript</p>
-            <p>
+            <p class="project-meta" data-i18n="projectMeta1">Design system • React • TypeScript</p>
+            <p data-i18n="projectDesc1">
               Built a component library with tokens, theming, and documented patterns. Included automated visual testing
               and accessibility checklists to speed up onboarding.
             </p>
@@ -148,8 +153,8 @@
           </article>
           <article class="card project-card">
             <h4>Pulse Analytics Dashboard</h4>
-            <p class="project-meta">Data visualization • Node • PostgreSQL</p>
-            <p>
+            <p class="project-meta" data-i18n="projectMeta2">Data visualization • Node • PostgreSQL</p>
+            <p data-i18n="projectDesc2">
               Delivered a responsive analytics suite with role-based access, server-side caching, and a metrics export
               flow for stakeholders.
             </p>
@@ -161,8 +166,8 @@
           </article>
           <article class="card project-card">
             <h4>Volunteer Connect</h4>
-            <p class="project-meta">Full-stack • Auth • Automation</p>
-            <p>
+            <p class="project-meta" data-i18n="projectMeta3">Full-stack • Auth • Automation</p>
+            <p data-i18n="projectDesc3">
               Led a team project for matching volunteers with local events. Implemented multi-step onboarding,
               transactional emails, and automated regression testing.
             </p>
@@ -179,24 +184,24 @@
         <div class="timeline">
           <div class="timeline-item">
             <span>2021 - 2024</span>
-            <h3>BSc in Computer Science</h3>
-            <p>
+            <h3 data-i18n="educationTitle1">BSc in Computer Science</h3>
+            <p data-i18n="educationBody1">
               Focused on software architecture, HCI, and data systems. Led the student developer club and hosted peer
               workshops on testing and code reviews.
             </p>
           </div>
           <div class="timeline-item">
             <span>2023</span>
-            <h3>Software Engineering Internship</h3>
-            <p>
+            <h3 data-i18n="educationTitle2">Software Engineering Internship</h3>
+            <p data-i18n="educationBody2">
               Built internal tooling for QA automation, contributed to UI refactors, and partnered with designers to
               unify component patterns across products.
             </p>
           </div>
           <div class="timeline-item">
             <span>2022</span>
-            <h3>Full-Stack Bootcamp</h3>
-            <p>
+            <h3 data-i18n="educationTitle3">Full-Stack Bootcamp</h3>
+            <p data-i18n="educationBody3">
               Strengthened hands-on skills in React, Node, and database modeling. Capstone project focused on civic tech
               and responsive design.
             </p>
@@ -207,9 +212,9 @@
       <section class="tab-panel" id="panel-certificates" role="tabpanel" aria-labelledby="tab-certificates" data-panel="certificates" hidden>
         <div class="panel-grid">
           <div class="card">
-            <h3>Frontend Performance Essentials</h3>
-            <p class="project-meta">Google Developers • 2024</p>
-            <p>
+            <h3 data-i18n="certificatesTitle1">Frontend Performance Essentials</h3>
+            <p class="project-meta" data-i18n="certificatesMeta1">Google Developers • 2024</p>
+            <p data-i18n="certificatesBody1">
               Hands-on labs focused on Core Web Vitals, bundle optimization, and building consistently fast interfaces.
             </p>
             <ul class="tag-list">
@@ -219,9 +224,9 @@
             </ul>
           </div>
           <div class="card">
-            <h3>Testing JavaScript Applications</h3>
-            <p class="project-meta">Open Source Academy • 2023</p>
-            <p>
+            <h3 data-i18n="certificatesTitle2">Testing JavaScript Applications</h3>
+            <p class="project-meta" data-i18n="certificatesMeta2">Open Source Academy • 2023</p>
+            <p data-i18n="certificatesBody2">
               Built a testing strategy with unit, integration, and end-to-end coverage using modern tooling and CI.
             </p>
             <ul class="tag-list">
@@ -231,9 +236,9 @@
             </ul>
           </div>
           <div class="card">
-            <h3>Cloud Foundations</h3>
-            <p class="project-meta">AWS Educate • 2023</p>
-            <p>
+            <h3 data-i18n="certificatesTitle3">Cloud Foundations</h3>
+            <p class="project-meta" data-i18n="certificatesMeta3">AWS Educate • 2023</p>
+            <p data-i18n="certificatesBody3">
               Covered deployment basics, infrastructure terminology, and monitoring patterns for modern web apps.
             </p>
             <ul class="tag-list">
@@ -249,41 +254,41 @@
         <div class="contact-grid">
           <div class="contact-list">
             <div class="card">
-              <h3>Lets connect</h3>
-              <p>
+              <h3 data-i18n="contactHeading">Let's connect</h3>
+              <p data-i18n="contactBody">
                 I am eager to join a team where I can grow, contribute to real products, and keep learning from senior
                 engineers. Feel free to reach out with roles, collaborations, or mentorship opportunities.
               </p>
             </div>
             <div class="contact-item">
-              <strong>Email</strong>
+              <strong data-i18n="contactEmailLabel">Email</strong>
               <div>martti.koivisto@email.com</div>
             </div>
             <div class="contact-item">
-              <strong>Location</strong>
-              <div>Helsinki, Finland (open to remote)</div>
+              <strong data-i18n="contactLocationLabel">Location</strong>
+              <div data-i18n="contactLocationValue">Helsinki, Finland (open to remote)</div>
             </div>
             <div class="contact-item">
-              <strong>LinkedIn</strong>
+              <strong data-i18n="contactLinkedInLabel">LinkedIn</strong>
               <div>linkedin.com/in/marttikoivisto</div>
             </div>
           </div>
           <div class="card" id="contact">
-            <h3>Send a message</h3>
+            <h3 data-i18n="contactFormHeading">Send a message</h3>
             <form>
               <div>
-                <label for="name">Name</label>
-                <input id="name" type="text" name="name" placeholder="Your name" />
+                <label for="name" data-i18n="contactNameLabel">Name</label>
+                <input id="name" type="text" name="name" placeholder="Your name" data-i18n-placeholder="contactNamePlaceholder" />
               </div>
               <div>
-                <label for="email">Email</label>
-                <input id="email" type="email" name="email" placeholder="you@email.com" />
+                <label for="email" data-i18n="contactEmailLabel">Email</label>
+                <input id="email" type="email" name="email" placeholder="you@email.com" data-i18n-placeholder="contactEmailPlaceholder" />
               </div>
               <div>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Tell me about the role or project."></textarea>
+                <label for="message" data-i18n="contactMessageLabel">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me about the role or project." data-i18n-placeholder="contactMessagePlaceholder"></textarea>
               </div>
-              <button class="btn primary" type="submit">Send message</button>
+              <button class="btn primary" type="submit" data-i18n="contactSubmit">Send message</button>
             </form>
           </div>
         </div>
@@ -291,8 +296,8 @@
     </main>
 
     <footer class="footer">
-      <div>Designed and built by Martti Koivisto.</div>
-      <div>Updated 2024. Built for GitHub Pages.</div>
+      <div data-i18n="footerLine1">Designed and built by Martti Koivisto.</div>
+      <div data-i18n="footerLine2">Updated 2026. Built for GitHub Pages.</div>
     </footer>
   </div>
 

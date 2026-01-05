@@ -151,6 +151,13 @@ h1 {
   gap: 12px;
 }
 
+.toggle-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
 .status-pill {
   padding: 8px 14px;
   border-radius: 999px;
@@ -161,7 +168,8 @@ h1 {
   box-shadow: var(--shadow);
 }
 
-.theme-toggle {
+.theme-toggle,
+.language-toggle {
   border: 1px solid var(--border);
   background: var(--surface);
   padding: 10px 16px;
@@ -172,7 +180,8 @@ h1 {
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
-.theme-toggle:hover {
+.theme-toggle:hover,
+.language-toggle:hover {
   transform: translateY(-1px);
   box-shadow: var(--shadow);
 }
@@ -482,6 +491,10 @@ textarea {
 @media (max-width: 720px) {
   .header-actions {
     align-items: flex-start;
+  }
+
+  .toggle-row {
+    justify-content: flex-start;
   }
 
   .status-pill {

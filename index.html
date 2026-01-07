@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title data-i18n="pageTitle">Junior Developer Portfolio</title>
-  <meta name="description" content="Junior developer portfolio with projects, education, and contact details." data-i18n-content="metaDescription" />
+  <title data-i18n="pageTitle">Martti Koivisto | markka.net</title>
+  <meta name="description" content="Portfolio of Martti Koivisto, a full-stack student open to junior developer roles." data-i18n-content="metaDescription" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
@@ -19,18 +19,19 @@
   <div class="page">
     <header class="site-header reveal" style="--delay: 60ms;">
       <div class="brand">
-        <div class="logo">MK</div>
-        <div>
-          <p class="eyebrow" data-i18n="eyebrow">Junior Developer Portfolio</p>
+        <div class="coin-mark" aria-hidden="true">
+          <div class="coin"><span>1mk.</span></div>
+        </div>
+        <div class="brand-text">
+          <p class="eyebrow" data-i18n="eyebrow">markka.net</p>
           <h1>Martti Koivisto</h1>
           <p class="subtitle" data-i18n="subtitle">
-            Building resilient, accessible web experiences with a focus on performance, clean architecture, and
-            thoughtful UI details.
+            Full-stack student and finance-to-software builder. I focus on backend systems, data handling, and clean interfaces.
           </p>
         </div>
       </div>
       <div class="header-actions">
-        <div class="status-pill" data-i18n="statusOpen">Open to internships and junior roles</div>
+        <div class="status-pill" data-i18n="statusOpen">Open to junior developer roles</div>
         <div class="toggle-row">
           <button class="theme-toggle" type="button" aria-pressed="false">
             <span class="theme-label">Theme: Light</span>
@@ -44,225 +45,266 @@
 
     <section class="hero">
       <div class="hero-left reveal" style="--delay: 140ms;">
-        <h2 data-i18n="heroHeading">Creative engineering with a product mindset</h2>
+        <h2 data-i18n="heroHeading">From finance rigor to software craft</h2>
         <p class="lead" data-i18n="heroLead">
-          I am a junior developer who loves turning complex requirements into simple, elegant flows. I build with
-          modern tooling, write clean documentation, and keep an eye on performance budgets from the first commit.
+          Career-changing developer training at kood/Sisu, with a focus on backend services, data workflows, and clear interfaces between components.
         </p>
-        <div class="hero-meta">
-          <div class="meta-card">
-            <strong>8+</strong>
-            <span data-i18n="metaComponents">Production-ready UI components</span>
-          </div>
-          <div class="meta-card">
-            <strong>3</strong>
-            <span data-i18n="metaProjects">Team projects shipped this year</span>
-          </div>
-          <div class="meta-card">
-            <strong>95%</strong>
-            <span data-i18n="metaAccessibility">Lighthouse accessibility scores</span>
-          </div>
-        </div>
-        <div class="cta-row">
+        <div class="hero-actions">
           <a class="btn primary" href="#contact" data-tab-link="contact" data-i18n="ctaContact">Contact me</a>
           <a class="btn ghost" href="#projects" data-tab-link="projects" data-i18n="ctaProjects">View projects</a>
         </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <strong>Top 8%</strong>
+            <span data-i18n="statLabel1">ranked in 2024 cohort</span>
+          </div>
+          <div class="stat-card">
+            <strong>2nd</strong>
+            <span data-i18n="statLabel2">kood/Sisu × Documtec hackathon</span>
+          </div>
+          <div class="stat-card">
+            <strong>4.9/5</strong>
+            <span data-i18n="statLabel3">peer review score (27 reviewers)</span>
+          </div>
+        </div>
       </div>
 
-      <div class="profile-stack reveal" style="--delay: 220ms;">
-        <div class="card">
-          <h3 data-i18n="stackFocus">Stack focus</h3>
-          <ul class="tag-list">
-            <li>Go</li>
-            <li>SQLite</li>
-            <li>Three.js</li>
-            <li>C</li>
-            <li>Python</li>
-            <li>HTML/CSS</li>
+      <div class="hero-right reveal" style="--delay: 220ms;">
+        <div class="card focus-card">
+          <h3 data-i18n="focusHeading">Current focus</h3>
+          <ul class="list">
+            <li data-i18n="focusItem1">kood/Sisu full-stack program (Go, SQL, JavaScript)</li>
+            <li data-i18n="focusItem2">Building reliable backend services and REST APIs</li>
+            <li data-i18n="focusItem3">Exploring systems-level and embedded paths</li>
           </ul>
         </div>
-        <div class="card signal-card">
-          <h3 data-i18n="quickPitch">Quick pitch</h3>
-          <p data-i18n="quickPitchText">
-            I enjoy pairing thoughtful UX with reliable engineering. Ask me about my design system experiments,
-            deployment automation, or building a11y-first components.
-          </p>
+        <div class="card coin-card">
+          <div class="coin coin-lg" aria-hidden="true"><span>mk</span></div>
+          <div>
+            <h3 data-i18n="coinHeading">The markka coin</h3>
+            <p data-i18n="coinBody">A nod to my initials (MK) and Finland's former currency.</p>
+          </div>
+        </div>
+        <div class="card stack-card">
+          <h3 data-i18n="stackFocusHeading">Stack snapshot</h3>
+          <ul class="tag-list">
+            <li>Go</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>REST APIs</li>
+            <li>Elasticsearch</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <nav class="tabs" role="tablist" aria-label="Portfolio sections" data-i18n-aria="navLabel">
-      <button class="tab" type="button" role="tab" aria-selected="true" aria-controls="panel-about" id="tab-about" data-tab="about" data-i18n="tabAbout">
+      <button class="tab" type="button" role="tab" aria-selected="true" aria-controls="about" id="tab-about" data-tab="about" data-i18n="tabAbout">
         About me
       </button>
-      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-projects" id="tab-projects" data-tab="projects" data-i18n="tabProjects">
+      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="projects" id="tab-projects" data-tab="projects" data-i18n="tabProjects">
         Projects
       </button>
-      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-education" id="tab-education" data-tab="education" data-i18n="tabEducation">
-        Education
+      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="experience" id="tab-experience" data-tab="experience" data-i18n="tabExperience">
+        Experience
       </button>
-      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-certificates" id="tab-certificates" data-tab="certificates" data-i18n="tabCertificates">
-        Certificates
+      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="stack" id="tab-stack" data-tab="stack" data-i18n="tabStack">
+        Stack & skills
       </button>
-      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-contact" id="tab-contact" data-tab="contact" data-i18n="tabContact">
+      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="contact" id="tab-contact" data-tab="contact" data-i18n="tabContact">
         Contact me
       </button>
     </nav>
 
     <main class="tab-content">
-      <section class="tab-panel" id="panel-about" role="tabpanel" aria-labelledby="tab-about" data-panel="about">
+      <section class="tab-panel" id="about" role="tabpanel" aria-labelledby="tab-about" data-panel="about">
         <div class="panel-grid">
           <div class="card">
             <h3 data-i18n="aboutHeading">About me</h3>
-            <p class="lead" style="margin: 0;" data-i18n="aboutBody">
-              I am a junior full-stack developer with a background in product design and a drive to build clean, reliable
-              interfaces. I thrive in collaborative teams and enjoy translating messy problem spaces into structured plans.
+            <p data-i18n="aboutBody1">
+              I’m a career-changing software developer with a strong analytical background from the finance industry.
+            </p>
+            <p data-i18n="aboutBody2">
+              I apply rigorous reasoning to software development, with a growing focus on backend systems, data handling, and clean interfaces between components.
             </p>
           </div>
           <div class="card">
-            <h3 data-i18n="bringHeading">What I bring</h3>
-            <ul class="list">
-              <li data-i18n="bringItem1">Strong communication and documentation habits to keep teams aligned.</li>
-              <li data-i18n="bringItem2">Accessibility-first UI thinking, including keyboard testing and semantic HTML.</li>
-              <li data-i18n="bringItem3">Curiosity for backend systems, APIs, and deployment pipelines.</li>
-            </ul>
+            <h3 data-i18n="educationHeading">Education</h3>
+            <div class="mini-timeline">
+              <div class="timeline-item">
+                <span data-i18n="education1Meta">10/2025 – Present</span>
+                <h4 data-i18n="education1Title">kood/Sisu — Full-Stack Software Development</h4>
+                <p data-i18n="education1Body">Peer-reviewed program using Go, SQL, and JavaScript with real-world datasets.</p>
+              </div>
+              <div class="timeline-item">
+                <span data-i18n="education2Meta">04/2025 – 07/2025</span>
+                <h4 data-i18n="education2Title">Harvard University — CS50x</h4>
+                <p data-i18n="education2Body">Strong foundation in algorithms, memory, and data structures with projects in C, Python, SQL, and web.</p>
+              </div>
+              <div class="timeline-item">
+                <span data-i18n="education3Meta">10/2018 – 09/2019</span>
+                <h4 data-i18n="education3Title">Lancaster University — Postgraduate Diploma in Finance</h4>
+                <p data-i18n="education3Body">Final project in Python: scraping, external data fetching, and valuation models.</p>
+              </div>
+              <div class="timeline-item">
+                <span data-i18n="education4Meta">09/2015 – 08/2018</span>
+                <h4 data-i18n="education4Title">Católica Lisbon School of Business & Economics — BSc Management</h4>
+                <p data-i18n="education4Body">International exposure and business fundamentals.</p>
+              </div>
+            </div>
           </div>
           <div class="card">
-            <h3 data-i18n="toolkitHeading">Toolkit highlights</h3>
-            <ul class="tag-list">
-              <li>Storybook</li>
-              <li>Next.js</li>
-              <li>Vite</li>
-              <li>Prisma</li>
-              <li>Figma</li>
-              <li>Notion</li>
+            <h3 data-i18n="lookingHeading">What I’m looking for</h3>
+            <ul class="list">
+              <li data-i18n="lookingItem1">Junior Software Developer / Software Engineer roles</li>
+              <li data-i18n="lookingItem2">Teams with code reviews, mentorship, and real ownership</li>
+              <li data-i18n="lookingItem3">Opportunities to grow in backend, systems-level, and embedded software</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section class="tab-panel" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects" data-panel="projects" hidden>
+      <section class="tab-panel" id="projects" role="tabpanel" aria-labelledby="tab-projects" data-panel="projects" hidden>
+        <div class="section-title">
+          <h3 data-i18n="projectsHeading">Selected projects</h3>
+        </div>
         <div class="projects-grid">
           <article class="card project-card">
-            <h4>Atlas UI Kit</h4>
-            <p class="project-meta" data-i18n="projectMeta1">Design system • React • TypeScript</p>
+            <h4 data-i18n="projectTitle1">Documtec Search Insights</h4>
+            <p class="project-meta" data-i18n="projectMeta1">Hackathon • Elasticsearch • Real-world data</p>
             <p data-i18n="projectDesc1">
-              Built a component library with tokens, theming, and documented patterns. Included automated visual testing
-              and accessibility checklists to speed up onboarding.
+              Built a search-driven insight tool on production-like data. Placed 2nd in the kood/Sisu × Documtec hackathon.
             </p>
             <ul class="tag-list">
-              <li>Tokens</li>
-              <li>A11y</li>
-              <li>CI</li>
+              <li>Elasticsearch</li>
+              <li>Data pipelines</li>
+              <li>Teamwork</li>
             </ul>
           </article>
           <article class="card project-card">
-            <h4>Pulse Analytics Dashboard</h4>
-            <p class="project-meta" data-i18n="projectMeta2">Data visualization • Node • PostgreSQL</p>
+            <h4 data-i18n="projectTitle2">Go Service Sandbox</h4>
+            <p class="project-meta" data-i18n="projectMeta2">Backend • REST APIs • SQL</p>
             <p data-i18n="projectDesc2">
-              Delivered a responsive analytics suite with role-based access, server-side caching, and a metrics export
-              flow for stakeholders.
+              Peer-reviewed Go services with clean data models, query layers, and API contracts.
             </p>
             <ul class="tag-list">
-              <li>API design</li>
-              <li>Charts</li>
-              <li>Performance</li>
+              <li>Go</li>
+              <li>SQL</li>
+              <li>APIs</li>
             </ul>
           </article>
           <article class="card project-card">
-            <h4>Volunteer Connect</h4>
-            <p class="project-meta" data-i18n="projectMeta3">Full-stack • Auth • Automation</p>
+            <h4 data-i18n="projectTitle3">Investment Workflow Automations</h4>
+            <p class="project-meta" data-i18n="projectMeta3">Python • Data workflows • Reporting</p>
             <p data-i18n="projectDesc3">
-              Led a team project for matching volunteers with local events. Implemented multi-step onboarding,
-              transactional emails, and automated regression testing.
+              Created internal tools to speed up analysis and reporting for finance teams.
             </p>
             <ul class="tag-list">
+              <li>Python</li>
               <li>Automation</li>
-              <li>Forms</li>
-              <li>QA</li>
+              <li>Reporting</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <section class="tab-panel" id="panel-education" role="tabpanel" aria-labelledby="tab-education" data-panel="education" hidden>
-        <div class="timeline">
-          <div class="timeline-item">
-            <span>2021 - 2024</span>
-            <h3 data-i18n="educationTitle1">BSc in Computer Science</h3>
-            <p data-i18n="educationBody1">
-              Focused on software architecture, HCI, and data systems. Led the student developer club and hosted peer
-              workshops on testing and code reviews.
-            </p>
+      <section class="tab-panel" id="experience" role="tabpanel" aria-labelledby="tab-experience" data-panel="experience" hidden>
+        <div class="experience-grid">
+          <div class="card">
+            <h3 data-i18n="experienceHeading">Professional experience</h3>
+            <div class="mini-timeline">
+              <div class="timeline-item">
+                <span data-i18n="experience1Meta">07/2020 – 09/2025</span>
+                <h4 data-i18n="experience1Title">Investment Analyst — Conficap Oy</h4>
+                <p data-i18n="experience1Body">
+                  Investment and portfolio analysis across asset classes, plus internal tools and data workflows to support decision-making.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span data-i18n="experience2Meta">10/2019 – 05/2020</span>
+                <h4 data-i18n="experience2Title">Finance Roles — London</h4>
+                <p data-i18n="experience2Body">
+                  Early-career roles in financial analysis and reporting in fast-paced environments.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="timeline-item">
-            <span>2023</span>
-            <h3 data-i18n="educationTitle2">Software Engineering Internship</h3>
-            <p data-i18n="educationBody2">
-              Built internal tooling for QA automation, contributed to UI refactors, and partnered with designers to
-              unify component patterns across products.
-            </p>
-          </div>
-          <div class="timeline-item">
-            <span>2022</span>
-            <h3 data-i18n="educationTitle3">Full-Stack Bootcamp</h3>
-            <p data-i18n="educationBody3">
-              Strengthened hands-on skills in React, Node, and database modeling. Capstone project focused on civic tech
-              and responsive design.
-            </p>
+          <div class="card">
+            <h3 data-i18n="leadershipHeading">Leadership & responsibility</h3>
+            <div class="mini-timeline">
+              <div class="timeline-item">
+                <span data-i18n="leadership1Meta">01/2022 – Present</span>
+                <h4 data-i18n="leadership1Title">Co-Founder — Suomen Metsä</h4>
+                <p data-i18n="leadership1Body">
+                  Organized fundraising and operations; raised ~€100k to protect forest land.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span data-i18n="leadership2Meta">11/2021 – 10/2024</span>
+                <h4 data-i18n="leadership2Title">Board Member — E3 Innovations Oy</h4>
+                <p data-i18n="leadership2Body">
+                  Vehicle data analytics startup exposure to product and tech strategy.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span data-i18n="leadership3Meta">03/2018 – Present</span>
+                <h4 data-i18n="leadership3Title">Board Member — Are Oy</h4>
+                <p data-i18n="leadership3Body">
+                  Participated in strategy, performance evaluation, and international expansion discussions.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="tab-panel" id="panel-certificates" role="tabpanel" aria-labelledby="tab-certificates" data-panel="certificates" hidden>
+      <section class="tab-panel" id="stack" role="tabpanel" aria-labelledby="tab-stack" data-panel="stack" hidden>
         <div class="panel-grid">
           <div class="card">
-            <h3 data-i18n="certificatesTitle1">Frontend Performance Essentials</h3>
-            <p class="project-meta" data-i18n="certificatesMeta1">Google Developers • 2024</p>
-            <p data-i18n="certificatesBody1">
-              Hands-on labs focused on Core Web Vitals, bundle optimization, and building consistently fast interfaces.
-            </p>
+            <h3 data-i18n="stackHeading1">Languages</h3>
             <ul class="tag-list">
-              <li>Web Vitals</li>
-              <li>Lighthouse</li>
-              <li>Optimizations</li>
+              <li>Go</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>C (foundations)</li>
             </ul>
           </div>
           <div class="card">
-            <h3 data-i18n="certificatesTitle2">Testing JavaScript Applications</h3>
-            <p class="project-meta" data-i18n="certificatesMeta2">Open Source Academy • 2023</p>
-            <p data-i18n="certificatesBody2">
-              Built a testing strategy with unit, integration, and end-to-end coverage using modern tooling and CI.
-            </p>
-            <ul class="tag-list">
-              <li>Jest</li>
-              <li>Playwright</li>
-              <li>Coverage</li>
+            <h3 data-i18n="stackHeading2">Web & backend</h3>
+            <ul class="list">
+              <li data-i18n="stackItemWeb1">REST APIs and backend services in Go</li>
+              <li data-i18n="stackItemWeb2">Frontend fundamentals (HTML, CSS, JavaScript)</li>
+              <li data-i18n="stackItemWeb3">Clean interfaces between components</li>
             </ul>
           </div>
           <div class="card">
-            <h3 data-i18n="certificatesTitle3">Cloud Foundations</h3>
-            <p class="project-meta" data-i18n="certificatesMeta3">AWS Educate • 2023</p>
-            <p data-i18n="certificatesBody3">
-              Covered deployment basics, infrastructure terminology, and monitoring patterns for modern web apps.
-            </p>
-            <ul class="tag-list">
-              <li>Deployments</li>
-              <li>Monitoring</li>
-              <li>Security</li>
+            <h3 data-i18n="stackHeading3">Databases & search</h3>
+            <ul class="list">
+              <li data-i18n="stackItemDb1">Relational databases and SQL schema design</li>
+              <li data-i18n="stackItemDb2">Elasticsearch (hands-on project experience)</li>
+              <li data-i18n="stackItemDb3">Data modeling and querying</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 data-i18n="stackHeading4">Tools & practices</h3>
+            <ul class="list">
+              <li data-i18n="stackItemTools1">Git & GitHub, peer code reviews</li>
+              <li data-i18n="stackItemTools2">Command-line tooling and debugging</li>
+              <li data-i18n="stackItemTools3">Basic system design and collaboration habits</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section class="tab-panel" id="panel-contact" role="tabpanel" aria-labelledby="tab-contact" data-panel="contact" hidden>
+      <section class="tab-panel" id="contact" role="tabpanel" aria-labelledby="tab-contact" data-panel="contact" hidden>
         <div class="contact-grid">
           <div class="contact-list">
             <div class="card">
-              <h3 data-i18n="contactHeading">Let's connect</h3>
+              <h3 data-i18n="contactHeading">Let’s connect</h3>
               <p data-i18n="contactBody">
-                I am eager to join a team where I can grow, contribute to real products, and keep learning from senior
-                engineers. Feel free to reach out with roles, collaborations, or mentorship opportunities.
+                I’m open to junior roles where I can grow in a professional engineering environment and contribute to production-quality code.
               </p>
             </div>
             <div class="contact-item">
@@ -277,8 +319,12 @@
               <strong data-i18n="contactLinkedInLabel">LinkedIn</strong>
               <div>linkedin.com/in/marttikoivisto</div>
             </div>
+            <div class="contact-item">
+              <strong data-i18n="contactWebsiteLabel">Website</strong>
+              <div>markka.net</div>
+            </div>
           </div>
-          <div class="card" id="contact">
+          <div class="card" id="contact-form">
             <h3 data-i18n="contactFormHeading">Send a message</h3>
             <form>
               <div>
@@ -302,7 +348,7 @@
 
     <footer class="footer">
       <div data-i18n="footerLine1">Designed and built by Martti Koivisto.</div>
-      <div data-i18n="footerLine2">Updated 2026. Built for GitHub Pages.</div>
+      <div data-i18n="footerLine2">markka.net — Built for GitHub Pages.</div>
     </footer>
   </div>
 

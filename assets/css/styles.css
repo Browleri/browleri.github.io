@@ -64,14 +64,14 @@ body {
   position: relative;
 }
 
-.page::after {
+/* .page::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 26, 51, 0.04) 100%);
   pointer-events: none;
   z-index: 0;
-}
+} */
 
 .page > * {
   position: relative;

@@ -259,7 +259,8 @@ h1 {
 }
 
 .card {
-  padding: 20px;
+  padding: 17px;
+  margin: 2px 0;
   border-radius: var(--radius-md);
   background: var(--surface);
   border: 1px solid var(--border);
@@ -384,6 +385,23 @@ h1 {
   font-size: 13px;
   color: var(--muted);
   margin-bottom: 12px;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 6px 0 12px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--navy-700);
+  transition: color var(--transition);
+}
+
+.project-link:hover {
+  color: var(--navy-600);
 }
 
 .mini-timeline {

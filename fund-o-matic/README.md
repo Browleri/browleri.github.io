@@ -45,8 +45,7 @@ The app communicates with the SQLite3 database in three ways.
 
 - Third, the application calculates the annual cashflows using the above mentioned details. The formula used is described in the [implementation section](#implementation). In cashflows-table, only the fund-id, year, amount and type of cashflow are stored.
 
-> [!NOTE]
-> In a functional application, there should be a page for editing the annual cashflows and removing funds from the database but I didn't make that functionality in this project.
+>NOTE: In a functional application, there should be a page for editing the annual cashflows and removing funds from the database but I didn't make that functionality in this project.
 
 ## Skills used and learnings from this project
 
@@ -58,8 +57,7 @@ Unfortunately, I had no idea how to do it and I was quite worried when I realise
 
 I got familiar with Chart.js graphing package and tried following different examples from online before trying to create a HTTP request from the server to retrieve a JSON-datastructure to process on client side. I was fairly confident that the SQLite command was correct but it took multiple hours of figuring out error messages and then the lack of error messages and output on the web app, but I finally got it.
 
-> [!NOTE]
-> The project has minimum functionalities and should be expanded in order to make this an actually useful tool.
+>NOTE: The project has minimum functionalities and should be expanded in order to make this an actually useful tool.
 
 TO DO:
 - [ ] Create a page for editing cashflows

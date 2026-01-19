@@ -7,7 +7,7 @@ const languageLabel = document.querySelector(".language-label");
 const storedTheme = localStorage.getItem("theme");
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const storedLanguage = localStorage.getItem("language");
-const browserLanguage = navigator.language && navigator.language.toLowerCase().startsWith("fi") ? "fi" : "en";
+const browserLanguage = navigator.language && navigator.language.toLowerCase().startsWith("fi") ? "fi" : "en"; // Serve website in Finnish if browser set to Finnish
 
 // Translation copy for all UI strings.
 const translations = {

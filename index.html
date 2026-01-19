@@ -117,7 +117,7 @@
       </button>
     </nav>
 
-    <main class="tab-content">
+    <main class="tab-content" aria-live="polite">
       <section class="tab-panel" id="about" role="tabpanel" aria-labelledby="tab-about" data-panel="about">
         <div class="panel-grid">
           <div class="card">
@@ -376,7 +376,7 @@
             </div>
             <div class="contact-item">
               <strong data-i18n="contactLinkedInLabel">LinkedIn</strong>
-              <div><a href="https://www.linkedin.com/in/marttikoivisto">linkedin.com/in/marttikoivisto</a></div>
+              <div><a href="https://www.linkedin.com/in/marttikoivisto" rel="noopener noreferrer">linkedin.com/in/marttikoivisto</a></div>
             </div>
             <div class="contact-item">
               <strong data-i18n="contactWebsiteLabel">Website</strong>
@@ -391,15 +391,15 @@
             >
               <div>
                 <label for="name" data-i18n="contactNameLabel">Name</label>
-                <input id="name" type="text" name="name" placeholder="Your name" data-i18n-placeholder="contactNamePlaceholder" />
+                <input id="name" type="text" name="name" placeholder="Your name" required data-i18n-placeholder="contactNamePlaceholder" />
               </div>
               <div>
                 <label for="email" data-i18n="contactEmailLabel">Email</label>
-                <input id="email" type="email" name="email" placeholder="you@email.com" data-i18n-placeholder="contactEmailPlaceholder" />
+                <input id="email" type="email" name="email" placeholder="you@email.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required data-i18n-placeholder="contactEmailPlaceholder" />
               </div>
               <div>
                 <label for="message" data-i18n="contactMessageLabel">Message</label>
-                <textarea id="message" name="message" placeholder="Tell me about the role or project." data-i18n-placeholder="contactMessagePlaceholder"></textarea>
+                <textarea id="message" name="message" placeholder="Tell me about the role or project." required data-i18n-placeholder="contactMessagePlaceholder"></textarea>
               </div>
               <button class="btn primary" type="submit" data-i18n="contactSubmit">Send message</button>
             </form>

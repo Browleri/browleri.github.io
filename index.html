@@ -88,10 +88,10 @@
         <div class="card stack-card">
           <h3 data-i18n="stackFocusHeading">Stack snapshot</h3>
           <ul class="tag-list stack-tags">
-            <li><a class="tag-link" href="#projects" data-tab-link="projects">Go</a></li>
-            <li><a class="tag-link" href="#projects" data-tab-link="projects">JavaScript</a></li>
-            <li><a class="tag-link" href="#projects" data-tab-link="projects">SQL</a></li>
-            <li><a class="tag-link" href="#projects" data-tab-link="projects">REST APIs</a></li>
+            <li><button class="tag-link" type="button" data-tech="go">Go</button></li>
+            <li><button class="tag-link" type="button" data-tech="javascript">JavaScript</button></li>
+            <li><button class="tag-link" type="button" data-tech="sql">SQL</button></li>
+            <li><button class="tag-link" type="button" data-tech="rest-api">REST APIs</button></li>
           </ul>
         </div>
       </div>
@@ -177,94 +177,94 @@
           <h3 data-i18n="projectsHeading">Selected projects</h3>
         </div>
         <div class="projects-grid">
-          <article class="card project-card">
+          <article class="card project-card" data-tags="go sql sqlite docker">
             <h4 data-i18n="projectTitle3">Literary Lions Forum</h4>
             <p class="project-meta" data-i18n="projectMeta3">kood/Sisu • Go • SQLite</p>
             <p data-i18n="projectDesc3">
               Full-stack discussion forum with posts, comments, reactions, search, and bcrypt authentication.
             </p>
             <a class="project-link" href="literary-lions/" data-i18n="projectLinkLabel">View README</a>
-            <ul class="tag-list">
-              <li>Go</li>
-              <li>SQLite</li>
-              <li>Docker</li>
+            <ul class="tag-list stack-tags">
+              <li><button class="tag-link" type="button" data-tech="go">Go</button></li>
+              <li><button class="tag-link" type="button" data-tech="sqlite">SQLite</button></li>
+              <li><button class="tag-link" type="button" data-tech="docker">Docker</button></li>
             </ul>
           </article>
-          <article class="card project-card">
+          <article class="card project-card" data-tags="javascript github-pages aria animations">
             <h4 data-i18n="projectTitle5">Portfolio website</h4>
             <p class="project-meta" data-i18n="projectMeta5">markka.net • HTML/CSS/JS</p>
             <p data-i18n="projectDesc5">
               Static portfolio with theme + language toggles, tabbed navigation, and accessibility-first layout.
             </p>
             <a class="project-link" href="docs/" data-i18n="projectLinkLabel">View README</a>
-            <ul class="tag-list">
-              <li>GitHub Pages</li>
-              <li>ARIA</li>
-              <li>Animations</li>
+            <ul class="tag-list stack-tags">
+              <li><button class="tag-link" type="button" data-tech="github-pages">GitHub Pages</button></li>
+              <li><button class="tag-link" type="button" data-tech="aria">ARIA</button></li>
+              <li><button class="tag-link" type="button" data-tech="animations">Animations</button></li>
             </ul>
           </article>
-          <article class="card project-card">
+          <article class="card project-card" data-tags="elasticsearch data-pipelines teamwork">
             <h4 data-i18n="projectTitle1">Documtec Search Insights</h4>
             <p class="project-meta" data-i18n="projectMeta1">Hackathon • Elasticsearch • Real-world data</p>
             <p data-i18n="projectDesc1">
               Built a search-driven insight tool on production-like data. Placed 2nd in the kood/Sisu × Documtec hackathon.
             </p>
-            <ul class="tag-list">
-              <li>Elasticsearch</li>
-              <li>Data pipelines</li>
-              <li>Teamwork</li>
+            <ul class="tag-list stack-tags">
+              <li><button class="tag-link" type="button" data-tech="elasticsearch">Elasticsearch</button></li>
+              <li><button class="tag-link" type="button" data-tech="data-pipelines">Data pipelines</button></li>
+              <li><button class="tag-link" type="button" data-tech="teamwork">Teamwork</button></li>
             </ul>
           </article>
-          <article class="card project-card">
+          <article class="card project-card" data-tags="go algorithms image-output">
             <h4 data-i18n="projectTitle4">Stations Pathfinder</h4>
             <p class="project-meta" data-i18n="projectMeta4">kood/Sisu • CLI • Visualization</p>
             <p data-i18n="projectDesc4">
               Multi-train routing tool with BFS, DFS, Dijkstra & A* algorithms and PNG map rendering for solutions.
             </p>
             <a class="project-link" href="stations/" data-i18n="projectLinkLabel">View README</a>
-            <ul class="tag-list">
-              <li>Go</li>
-              <li>Algorithms</li>
-              <li>Image output</li>
+            <ul class="tag-list stack-tags">
+              <li><button class="tag-link" type="button" data-tech="go">Go</button></li>
+              <li><button class="tag-link" type="button" data-tech="algorithms">Algorithms</button></li>
+              <li><button class="tag-link" type="button" data-tech="image-output">Image output</button></li>
             </ul>
           </article>
-          <article class="card project-card">
+          <article class="card project-card" data-tags="raspberry-pi dns linux">
             <h4 data-i18n="projectTitle6">Raspberry Pi home server</h4>
             <p class="project-meta" data-i18n="projectMeta6">Pi-hole • Networking</p>
             <p data-i18n="projectDesc6">
               Always-on DNS sinkhole with network-wide ad blocking and a web-based admin dashboard.
             </p>
             <a class="project-link" href="pi-hole/" data-i18n="projectLinkLabel">View README</a>
-            <ul class="tag-list">
-              <li>Raspberry Pi</li>
-              <li>DNS</li>
-              <li>Linux</li>
+            <ul class="tag-list stack-tags">
+              <li><button class="tag-link" type="button" data-tech="raspberry-pi">Raspberry Pi</button></li>
+              <li><button class="tag-link" type="button" data-tech="dns">DNS</button></li>
+              <li><button class="tag-link" type="button" data-tech="linux">Linux</button></li>
             </ul>
           </article>
-          <article class="card project-card">
+          <article class="card project-card" data-tags="go json rest-api">
             <h4 data-i18n="projectTitle7">Cars viewer</h4>
             <p class="project-meta" data-i18n="projectMeta7">Go • API integration</p>
             <p data-i18n="projectDesc7">
               Web interface that consumes an external cars API for browsing, comparing, and recommendations.
             </p>
             <a class="project-link" href="cars/" data-i18n="projectLinkLabel">View README</a>
-            <ul class="tag-list">
-              <li>Go</li>
-              <li>JSON</li>
-              <li>UI</li>
+            <ul class="tag-list stack-tags">
+              <li><button class="tag-link" type="button" data-tech="go">Go</button></li>
+              <li><button class="tag-link" type="button" data-tech="json">JSON</button></li>
+              <li><button class="tag-link" type="button" data-tech="rest-api">REST API</button></li>
             </ul>
           </article>
-          <article class="card project-card">
+          <article class="card project-card" data-tags="python flask chart-js sql javascript">
             <h4 data-i18n="projectTitle2">Fund-O-Matic</h4>
             <p class="project-meta" data-i18n="projectMeta2">CS50x final project • Flask • SQLite</p>
             <p data-i18n="projectDesc2">
               Web app to plan private-market fund commitments and forecast cashflows using simple investment phase logic.
             </p>
             <a class="project-link" href="fund-o-matic/" data-i18n="projectLinkLabel">View README</a>
-            <ul class="tag-list">
-              <li>Python</li>
-              <li>Flask</li>
-              <li>Chart.js</li>
+            <ul class="tag-list stack-tags">
+              <li><button class="tag-link" type="button" data-tech="python">Python</button></li>
+              <li><button class="tag-link" type="button" data-tech="flask">Flask</button></li>
+              <li><button class="tag-link" type="button" data-tech="chart-js">Chart.js</button></li>
             </ul>
           </article>
         </div>

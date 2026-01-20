@@ -328,6 +328,9 @@ h1 {
   font-size: 13px;
   font-weight: 600;
   color: var(--text);
+  font-family: var(--font-body);
+  cursor: pointer;
+  appearance: none;
   transition: background var(--transition), transform var(--transition), color var(--transition);
 }
 
@@ -335,6 +338,18 @@ h1 {
   background: var(--surface-alt);
   color: var(--navy-700);
   transform: translateY(-1px);
+}
+
+.stack-tags .tag-link.is-active {
+  background: var(--navy-700);
+  color: #fff;
+  border-color: transparent;
+  transform: translateY(-1px);
+}
+
+.stack-tags .tag-link:focus-visible {
+  outline: 2px solid var(--navy-700);
+  outline-offset: 2px;
 }
 
 .list {
@@ -406,6 +421,10 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+.project-card {
+  transition: opacity var(--transition), transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
 .project-card h4 {
   margin: 0 0 6px;
   font-size: 18px;
@@ -415,6 +434,16 @@ h1 {
   font-size: 13px;
   color: var(--muted);
   margin-bottom: 12px;
+}
+
+.project-card.is-dim {
+  opacity: 0.35;
+  transform: scale(0.995);
+}
+
+.project-card.is-highlight {
+  border-color: var(--navy-700);
+  box-shadow: 0 24px 50px rgba(10, 26, 51, 0.18);
 }
 
 .project-link {

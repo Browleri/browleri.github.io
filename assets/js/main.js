@@ -381,6 +381,30 @@ if (languageToggle) {
 const tabs = Array.from(document.querySelectorAll("[role='tab']"));
 const panels = Array.from(document.querySelectorAll("[role='tabpanel']"));
 const tabLinks = Array.from(document.querySelectorAll("[data-tab-link]"));
+const techLinks = Array.from(document.querySelectorAll("[data-tech]"));
+const projectCards = Array.from(document.querySelectorAll(".project-card"));
+let activeTech = null;
+
+function applyTechFilter(nextTech) {
+  if (!nextTech) {
+    activeTech = null;
+  } else {
+    activeTech = activeTech === nextTech ? null : nextTech;
+  }
+
+  const hasFilter = Boolean(activeTech);
+  projectCards.forEach((card) => {
+    const tags = (card.dataset.tags || "").split(/\s+/).filter(Boolean);
+    const isMatch = hasFilter && tags.includes(activeTech);
+    card.classList.toggle("is-highlight", hasFilter && isMatch);
+    card.classList.toggle("is-dim", hasFilter && !isMatch);
+  });
+
+  techLinks.forEach((link) => {
+    const isActive = hasFilter && link.dataset.tech === activeTech;
+    link.classList.toggle("is-active", isActive);
+  });
+}
 
 function activateTab(name, setFocus, updateHash) {
   tabs.forEach((tab) => {
@@ -436,11 +460,30 @@ tabs.forEach((tab) => {
   });
 });
 
+techLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    applyTechFilter(link.dataset.tech);
+    const projectsTab = tabs.find((tab) => tab.dataset.tab === "projects");
+    const isProjectsActive = projectsTab && projectsTab.getAttribute("aria-selected") === "true";
+    if (!isProjectsActive) {
+      activateTab("projects", false, true);
+      const panel = document.querySelector("[data-panel='projects']");
+      if (panel) {
+        panel.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  });
+});
+
 // CTA links switch tabs and smoothly scroll to the panel.
 tabLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
     activateTab(link.dataset.tabLink, true, true);
+    if (link.dataset.tech) {
+      applyTechFilter(link.dataset.tech);
+    }
     const panel = document.querySelector("[data-panel='" + link.dataset.tabLink + "']");
     if (panel) {
       panel.scrollIntoView({ behavior: "smooth", block: "start" });

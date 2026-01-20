@@ -220,6 +220,11 @@ h1 {
   padding-bottom: 36px;
 }
 
+.hero-right {
+  display: grid;
+  gap: 16px;
+}
+
 .hero h2 {
   font-size: clamp(26px, 4vw, 38px);
   margin-bottom: 12px;
@@ -305,6 +310,31 @@ h1 {
   background: var(--surface);
   font-size: 13px;
   font-weight: 600;
+}
+
+.stack-tags li {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.stack-tags .tag-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  transition: background var(--transition), transform var(--transition), color var(--transition);
+}
+
+.stack-tags .tag-link:hover {
+  background: var(--surface-alt);
+  color: var(--navy-700);
+  transform: translateY(-1px);
 }
 
 .list {
@@ -601,6 +631,17 @@ textarea {
 
   .coin-card .coin {
     margin: 0 auto;
+  }
+
+  .hero,
+  .hero-right,
+  .hero-stats,
+  .panel-grid,
+  .projects-grid,
+  .experience-grid,
+  .contact-grid,
+  .mini-timeline {
+    gap: 16px;
   }
 }
 

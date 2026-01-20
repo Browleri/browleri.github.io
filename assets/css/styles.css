@@ -497,7 +497,7 @@ h1 {
   display: block;
   width: min(80%, 280px);
   height: auto;
-  margin: 16px auto 0;
+  margin: 10% auto 0;
   border-radius: 50%;
   border: 2px solid var(--border);
   box-shadow: 0 16px 30px rgba(10, 26, 51, 0.15);

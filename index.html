@@ -17,6 +17,7 @@
 </head>
 <body>
   <div class="page">
+    <!-- Header: identity, status, and global toggles -->
     <header class="site-header reveal" style="--delay: 60ms;">
       <div class="brand">
         <div class="coin-mark" aria-hidden="true">
@@ -26,7 +27,7 @@
           <p class="eyebrow" data-i18n="eyebrow">markka.net</p>
           <h1>Martti Koivisto</h1>
           <p class="subtitle" data-i18n="subtitle">
-            Full-stack student and finance-to-software builder. I focus on backend systems, data handling, and clean interfaces.
+            Junior full-stack developer with finance-grade rigor. I focus on backend services, data handling, and clean interfaces.
           </p>
         </div>
       </div>
@@ -43,11 +44,12 @@
       </div>
     </header>
 
+    <!-- Hero: primary pitch, focus, and stack snapshot -->
     <section class="hero">
       <div class="hero-left reveal" style="--delay: 140ms;">
         <h2 data-i18n="heroHeading">From finance rigor to software craft</h2>
         <p class="lead" data-i18n="heroLead">
-          Career-changing developer training at kood/Sisu, with a focus on backend services, data workflows, and clear interfaces between components.
+          I build dependable backend services, clear APIs, and data workflows. I value clarity, ownership, and steady delivery, and I enjoy working in teams that care about how things are built.
         </p>
         <div class="hero-actions">
           <a class="btn primary" href="#contact" data-tab-link="contact" data-i18n="ctaContact">Contact me</a>
@@ -97,6 +99,7 @@
       </div>
     </section>
 
+    <!-- Tabs: main navigation for panels below -->
     <nav class="tabs" role="tablist" aria-label="Portfolio sections" data-i18n-aria="navLabel">
       <button class="tab" type="button" role="tab" aria-selected="true" aria-controls="about" id="tab-about" data-tab="about" data-i18n="tabAbout">
         About me
@@ -115,7 +118,9 @@
       </button>
     </nav>
 
+    <!-- Tab panels: content driven by the active tab -->
     <main class="tab-content" aria-live="polite">
+      <!-- About: summary, education, and goals -->
       <section class="tab-panel" id="about" role="tabpanel" aria-labelledby="tab-about" data-panel="about">
         <div class="panel-grid">
           <div class="card">
@@ -172,12 +177,14 @@
         </div>
       </section>
 
+      <!-- Projects: cards filtered by tech pills -->
       <section class="tab-panel" id="projects" role="tabpanel" aria-labelledby="tab-projects" data-panel="projects" hidden>
         <div class="section-title">
           <h3 data-i18n="projectsHeading">Selected projects</h3>
         </div>
         <div class="projects-grid">
-          <article class="card project-card" data-tags="go sql sqlite docker">
+          <!-- Project: Literary Lions -->
+          <article class="card project-card" data-tags="go sql sqlite docker teamwork">
             <h4 data-i18n="projectTitle3">Literary Lions Forum</h4>
             <p class="project-meta" data-i18n="projectMeta3">kood/Sisu • Go • SQLite</p>
             <p data-i18n="projectDesc3">
@@ -188,9 +195,11 @@
               <li><button class="tag-link" type="button" data-tech="go">Go</button></li>
               <li><button class="tag-link" type="button" data-tech="sqlite">SQLite</button></li>
               <li><button class="tag-link" type="button" data-tech="docker">Docker</button></li>
+              <li><button class="tag-link" type="button" data-tech="rest-api">REST API</button></li>
             </ul>
           </article>
-          <article class="card project-card" data-tags="javascript github-pages aria animations">
+          <!-- Project: Portfolio website -->
+          <article class="card project-card" data-tags="javascript github-pages aria animations dns">
             <h4 data-i18n="projectTitle5">Portfolio website</h4>
             <p class="project-meta" data-i18n="projectMeta5">markka.net • HTML/CSS/JS</p>
             <p data-i18n="projectDesc5">
@@ -203,6 +212,7 @@
               <li><button class="tag-link" type="button" data-tech="animations">Animations</button></li>
             </ul>
           </article>
+          <!-- Project: Documtec Search Insights -->
           <article class="card project-card" data-tags="elasticsearch data-pipelines teamwork">
             <h4 data-i18n="projectTitle1">Documtec Search Insights</h4>
             <p class="project-meta" data-i18n="projectMeta1">Hackathon • Elasticsearch • Real-world data</p>
@@ -215,7 +225,8 @@
               <li><button class="tag-link" type="button" data-tech="teamwork">Teamwork</button></li>
             </ul>
           </article>
-          <article class="card project-card" data-tags="go algorithms image-output">
+          <!-- Project: Stations Pathfinder -->
+          <article class="card project-card" data-tags="go algorithms image-output teamwork">
             <h4 data-i18n="projectTitle4">Stations Pathfinder</h4>
             <p class="project-meta" data-i18n="projectMeta4">kood/Sisu • CLI • Visualization</p>
             <p data-i18n="projectDesc4">
@@ -228,6 +239,7 @@
               <li><button class="tag-link" type="button" data-tech="image-output">Image output</button></li>
             </ul>
           </article>
+          <!-- Project: Raspberry Pi home server -->
           <article class="card project-card" data-tags="raspberry-pi dns linux">
             <h4 data-i18n="projectTitle6">Raspberry Pi home server</h4>
             <p class="project-meta" data-i18n="projectMeta6">Pi-hole • Networking</p>
@@ -241,9 +253,10 @@
               <li><button class="tag-link" type="button" data-tech="linux">Linux</button></li>
             </ul>
           </article>
-          <article class="card project-card" data-tags="go json rest-api">
+          <!-- Project: Cars viewer -->
+          <article class="card project-card" data-tags="go json rest-api teamwork data-pipelines">
             <h4 data-i18n="projectTitle7">Cars viewer</h4>
-            <p class="project-meta" data-i18n="projectMeta7">Go • API integration</p>
+            <p class="project-meta" data-i18n="projectMeta7">kood/Sisu • Go • API integration</p>
             <p data-i18n="projectDesc7">
               Web interface that consumes an external cars API for browsing, comparing, and recommendations.
             </p>
@@ -254,6 +267,7 @@
               <li><button class="tag-link" type="button" data-tech="rest-api">REST API</button></li>
             </ul>
           </article>
+          <!-- Project: Fund-O-Matic -->
           <article class="card project-card" data-tags="python flask chart-js sql javascript">
             <h4 data-i18n="projectTitle2">Fund-O-Matic</h4>
             <p class="project-meta" data-i18n="projectMeta2">CS50x final project • Flask • SQLite</p>
@@ -270,6 +284,7 @@
         </div>
       </section>
 
+      <!-- Experience: work history and leadership roles -->
       <section class="tab-panel" id="experience" role="tabpanel" aria-labelledby="tab-experience" data-panel="experience" hidden>
         <div class="experience-grid">
           <div class="card">
@@ -320,6 +335,7 @@
         </div>
       </section>
 
+      <!-- Stack: skills and tools detail -->
       <section class="tab-panel" id="stack" role="tabpanel" aria-labelledby="tab-stack" data-panel="stack" hidden>
         <div class="panel-grid">
           <div class="card">
@@ -359,6 +375,7 @@
         </div>
       </section>
 
+      <!-- Contact: intro + message form -->
       <section class="tab-panel" id="contact" role="tabpanel" aria-labelledby="tab-contact" data-panel="contact" hidden>
         <div class="contact-grid">
           <div class="contact-list">
@@ -406,6 +423,7 @@
       </section>
     </main>
 
+    <!-- Footer: credits and update line -->
     <footer class="footer">
       <div data-i18n="footerLine1">Designed and built by Martti Koivisto.</div>
       <div data-i18n="footerLine2">markka.net — Built for GitHub Pages.</div>

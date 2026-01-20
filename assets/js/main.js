@@ -18,7 +18,7 @@ const translations = {
     light: "Light",
     dark: "Dark",
     pageTitle: "Martti Koivisto | markka.net",
-    metaDescription: "Portfolio of Martti Koivisto, a full-stack student open to junior developer roles.",
+    metaDescription: "Portfolio of Martti Koivisto, a junior full-stack developer with a strong analytical background, focusing on backend systems and data-driven software.",
     navLabel: "Portfolio sections",
     eyebrow: "markka.net",
     subtitle:
@@ -149,7 +149,7 @@ const translations = {
     light: "Vaalea",
     dark: "Tumma",
     pageTitle: "Martti Koivisto | markka.net",
-    metaDescription: "Martti Koiviston portfolio, full-stack-opiskelija joka hakee juniorikehittäjän rooleja.",
+    metaDescription: "Martti Koiviston portfolio – junior full-stack-kehittäjä, jolla on vahva analyyttinen tausta ja kiinnostus backend-järjestelmiin sekä datalähtöiseen ohjelmistokehitykseen.",
     navLabel: "Portfolion osiot",
     eyebrow: "markka.net",
     subtitle:

@@ -649,6 +649,9 @@ textarea {
 
   .tabs {
     overflow-x: auto;
+    position: sticky;
+    top: 12px;
+    z-index: 10;
   }
 }
 

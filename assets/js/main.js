@@ -50,7 +50,9 @@ const translations = {
     aboutBody2:
       "I bring a structured, detail-oriented approach to software development, with a growing focus on backend systems, data handling, and clean interfaces between components.",
     aboutBody3:
-      "I’ve worked with both start-ups and established companies in local and international contexts, and I’ve had the opportunity to study the business logic of many organizations through an investor’s lens. I believe that a deep understanding of business context helps me build software that is more relevant and useful for end users.",
+      "I’ve worked with both start-ups and established companies in local and international contexts, and I’ve had the opportunity to study the business logic of many organizations through an investor’s lens.",
+    aboutBody4:
+      "I believe that a deep understanding of business context helps me build software that is more relevant and intuitive for end users.",
     educationHeading: "Education",
     education1Title: "kood/Sisu — Full-Stack Software Development",
     education1Meta: "10/2025 – Present",
@@ -187,7 +189,9 @@ const translations = {
     aboutBody2:
       "Tuon ohjelmistokehitykseen jäsennellyn ja yksityiskohtiin keskittyvän työotteen, ja suuntaudun yhä enemmän backend-järjestelmiin, datankäsittelyyn ja selkeisiin rajapintoihin komponenttien välillä.",
     aboutBody3:
-      "Olen työskennellyt sekä startuppien että vakiintuneiden yritysten kanssa paikallisissa ja kansainvälisissä ympäristöissä, ja olen saanut tarkastella monien organisaatioiden liiketoimintalogiikkaa sijoittajan näkökulmasta. Uskon, että syvä ymmärrys liiketoimintakontekstista auttaa minua rakentamaan loppukäyttäjille merkityksellisempiä ja hyödyllisempiä ohjelmistoja.",
+      "Olen työskennellyt sekä startuppien että vakiintuneiden yritysten kanssa paikallisissa ja kansainvälisissä ympäristöissä, ja olen saanut tarkastella monien organisaatioiden liiketoimintalogiikkaa sijoittajan näkökulmasta.",
+    aboutBody4:
+      "Uskon, että syvä ymmärrys liiketoimintakontekstista auttaa minua rakentamaan loppukäyttäjille merkityksellisempiä ja intuitiivisempia ohjelmistoja.",
     educationHeading: "Koulutus",
     education1Title: "kood/Sisu — Full-Stack Software Development",
     education1Meta: "10/2025 – Nykyhetki",

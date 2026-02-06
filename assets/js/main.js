@@ -48,7 +48,9 @@ const translations = {
     aboutBody1:
       "I’m a career-changing software developer with a strong analytical background from the finance industry.",
     aboutBody2:
-      "I apply rigorous reasoning to software development, with a growing focus on backend systems, data handling, and clean interfaces between components.",
+      "I bring a structured, detail-oriented approach to software development, with a growing focus on backend systems, data handling, and clean interfaces between components.",
+    aboutBody3:
+      "I’ve worked with both start-ups and established companies in local and international contexts, and I’ve had the opportunity to study the business logic of many organizations through an investor’s lens. I believe that a deep understanding of business context helps me build software that is more relevant and useful for end users.",
     educationHeading: "Education",
     education1Title: "kood/Sisu — Full-Stack Software Development",
     education1Meta: "10/2025 – Present",
@@ -62,6 +64,11 @@ const translations = {
     education4Title: "Católica Lisbon School of Business & Economics — BSc Management",
     education4Meta: "09/2015 – 08/2018",
     education4Body: "International exposure and business fundamentals.",
+    howIWorkHeading: "How I work",
+    howIWorkValues: "Curiosity | Humility | Team-first",
+    howIWorkQuote:
+      "\"Fantastic collaboration experience throughout. Attention to details and the drive to learn and make it better is there. 100 % reliable and dedicated to the project.\"",
+    howIWorkSource: "-Peer review, student project",
     lookingHeading: "What I’m looking for",
     lookingItem1: "Junior Software Developer / Software Engineer roles",
     lookingItem2: "Teams with code reviews, mentorship, and real ownership",
@@ -178,7 +185,9 @@ const translations = {
     aboutHeading: "Minusta",
     aboutBody1: "Olen ohjelmistokehittäjäksi siirtynyt uranvaihtaja, jolla on vahva analyyttinen tausta rahoitusalalta.",
     aboutBody2:
-      "Sovellan ohjelmistokehityksessä systemaattista ajattelua ja suuntaudun yhä enemmän backend-järjestelmiin, datankäsittelyyn ja selkeisiin rajapintoihin komponenttien välillä.",
+      "Tuon ohjelmistokehitykseen jäsennellyn ja yksityiskohtiin keskittyvän työotteen, ja suuntaudun yhä enemmän backend-järjestelmiin, datankäsittelyyn ja selkeisiin rajapintoihin komponenttien välillä.",
+    aboutBody3:
+      "Olen työskennellyt sekä startupeissa että vakiintuneissa yrityksissä paikallisissa ja kansainvälisissä ympäristöissä, ja olen saanut tarkastella monien organisaatioiden liiketoimintalogiikkaa sijoittajan näkökulmasta. Uskon, että syvä ymmärrys liiketoimintakontekstista auttaa minua rakentamaan loppukäyttäjille osuvampia ja hyödyllisempiä ohjelmistoja.",
     educationHeading: "Koulutus",
     education1Title: "kood/Sisu — Full-Stack Software Development",
     education1Meta: "10/2025 – Nykyhetki",
@@ -193,6 +202,11 @@ const translations = {
     education4Title: "Católica Lisbon School of Business & Economics — BSc Management",
     education4Meta: "09/2015 – 08/2018",
     education4Body: "Kansainvälinen kokemus ja liiketoiminnan perusteet.",
+    howIWorkHeading: "Miten työskentelen",
+    howIWorkValues: "Uteliaisuus | Nöyryys | Tiimi ensin",
+    howIWorkQuote:
+      "\"Yhteistyö sujui läpi projektin erinomaisesti. Huolellisuus ja halu oppia sekä parantaa näkyivät selvästi. 100 % luotettava ja omistautunut projektille.\"",
+    howIWorkSource: "-Vertaisarvio, opiskelijaprojekti",
     lookingHeading: "Mitä etsin",
     lookingItem1: "Junior Software Developer / Software Engineer -rooleja",
     lookingItem2: "Tiimejä, joissa on code review, mentorointi ja aito omistajuus",

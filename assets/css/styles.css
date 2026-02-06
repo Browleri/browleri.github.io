@@ -411,6 +411,46 @@ h1 {
   gap: 20px;
 }
 
+.middle-divider-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-values {
+  margin: 0 0 12px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.testimonial-quote {
+  margin: 6px 0 0;
+  padding: 14px 16px;
+  border-left: 3px solid var(--gold-500);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: rgba(16, 42, 87, 0.05);
+  color: var(--text);
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.testimonial-source {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
+.card-divider {
+  border: 0;
+  border-top: 1px solid var(--border);
+  width: 100%;
+  margin: clamp(1rem, 2vw, 2rem) 0;
+}
+
+.split-section-heading {
+  margin-top: 0;
+}
+
 .section-title h3 {
   margin-bottom: 0;
 }
@@ -675,6 +715,7 @@ textarea {
   .mini-timeline {
     gap: 16px;
   }
+
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -187,7 +187,7 @@ const translations = {
     aboutBody2:
       "Tuon ohjelmistokehitykseen jäsennellyn ja yksityiskohtiin keskittyvän työotteen, ja suuntaudun yhä enemmän backend-järjestelmiin, datankäsittelyyn ja selkeisiin rajapintoihin komponenttien välillä.",
     aboutBody3:
-      "Olen työskennellyt sekä startupeissa että vakiintuneissa yrityksissä paikallisissa ja kansainvälisissä ympäristöissä, ja olen saanut tarkastella monien organisaatioiden liiketoimintalogiikkaa sijoittajan näkökulmasta. Uskon, että syvä ymmärrys liiketoimintakontekstista auttaa minua rakentamaan loppukäyttäjille osuvampia ja hyödyllisempiä ohjelmistoja.",
+      "Olen työskennellyt sekä startuppien että vakiintuneiden yritysten kanssa paikallisissa ja kansainvälisissä ympäristöissä, ja olen saanut tarkastella monien organisaatioiden liiketoimintalogiikkaa sijoittajan näkökulmasta. Uskon, että syvä ymmärrys liiketoimintakontekstista auttaa minua rakentamaan loppukäyttäjille merkityksellisempiä ja hyödyllisempiä ohjelmistoja.",
     educationHeading: "Koulutus",
     education1Title: "kood/Sisu — Full-Stack Software Development",
     education1Meta: "10/2025 – Nykyhetki",
@@ -205,7 +205,7 @@ const translations = {
     howIWorkHeading: "Miten työskentelen",
     howIWorkValues: "Uteliaisuus | Nöyryys | Tiimi ensin",
     howIWorkQuote:
-      "\"Yhteistyö sujui läpi projektin erinomaisesti. Huolellisuus ja halu oppia sekä parantaa näkyivät selvästi. 100 % luotettava ja omistautunut projektille.\"",
+      "\"Yhteistyö sujui läpi projektin erinomaisesti. Huolellisuus ja halu oppia sekä kehittyä näkyivät selvästi. 100 % luotettava ja omistautunut projektille.\"",
     howIWorkSource: "-Vertaisarvio, opiskelijaprojekti",
     lookingHeading: "Mitä etsin",
     lookingItem1: "Junior Software Developer / Software Engineer -rooleja",

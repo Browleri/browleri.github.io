@@ -102,6 +102,10 @@ const translations = {
     projectMeta7: "kood/Sisu • Go • API integration",
     projectDesc7:
       "Web interface that consumes an external cars API for browsing, comparing, and recommendations.",
+    projectTitle8: "Istekki Hackathon",
+    projectMeta8: "Hackathon • Node.js • Email monitoring",
+    projectDesc8:
+      "Built an email monitoring service with a mock IMAP server and a Gmail integration for demonstration.",
     projectLinkLabel: "View ReadMe",
     experienceHeading: "Professional experience",
     experience1Title: "Investment Analyst — Conficap Oy",
@@ -244,6 +248,10 @@ const translations = {
     projectMeta7: "kood/Sisu • Go • API-integraatio",
     projectDesc7:
       "Web-käyttöliittymä, joka hakee dataa ulkoisesta cars-API:sta selaamiseen, vertailuun ja suosituksiin.",
+    projectTitle8: "Istekki Hackathon",
+    projectMeta8: "Hackathon • Node.js • Sähköpostimonitorointi",
+    projectDesc8:
+      "Rakensin sähköpostien monitorointipalvelun, jossa oli mockattu IMAP-palvelin ja Gmail-integraatio demoa varten.",
     projectLinkLabel: "Avaa ReadMe",
     experienceHeading: "Työkokemus",
     experience1Title: "Investment Analyst — Conficap Oy",

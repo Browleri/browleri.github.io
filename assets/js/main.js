@@ -221,7 +221,7 @@ const translations = {
     lookingItem3: "Mahdollisuuksia kasvaa backend-, järjestelmä- ja sulautettujen ohjelmistojen saralla",
     projectsHeading: "Valikoidut projektit",
     projectTitle1: "Documtec Search Insights",
-    projectMeta1: "Hackathon • Elasticsearch • Oikea data",
+    projectMeta1: "Hackathon • Elasticsearch • Todellinen data",
     projectDesc1:
       "Rakensin hakupohjaisen insight-työkalun tuotantotyyppisellä datalla. Sijoitus 2. kood/Sisu × Documtec -hackathonissa.",
     projectTitle2: "Fund-O-Matic",

@@ -3,7 +3,8 @@
 ## Infrastructure
 - Static site: plain HTML, CSS, and JavaScript.
 - Deployed by pushing to the hosted branch; GitHub Pages serves `index.html` with linked assets in `assets/`. Project ReadMe-files hosted in `project-name/`.
-- Cloudflare DNS configured to direct web traffic from `markka.net` domain to the Github pages and email traffic to Gmail. This allows for cost-effective hosting and email services, while still having a custom domain. 
+- Cloudflare provides DNS for `markka.net`, pointing web traffic to the Github pages and email to Microsoft 365. 
+- Static hosting via GitHub pages keeps cost level low, while M365 provides a fully authenticated email setup (SPF/DKIM/DMARC). Switched from Gmail to M365 to achieve correct email authentication. 
 
 ## Technical features
 - Light/dark mode toggle with `localStorage` persistence and system preference fallback.

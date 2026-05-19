@@ -60,7 +60,7 @@ Pi-hole directories are **symlinked** to the USB drive so that:
 
 ## Network Setup
 
-* **Static IP:** `192.168.101.112`
+* **Static IP:** `192.168.101.12`
 * Pi-hole configured as the primary DNS server
 * DNS resolution handled by Pi-hole (`dnsmasq`)
 * Router configured to use Pi-hole for DNS
@@ -83,14 +83,14 @@ Pi-hole directories are **symlinked** to the USB drive so that:
 
 ### Web Admin UI
 ```
-http://192.168.101.112/admin
+http://192.168.101.12/admin
 ```
 
 ### SSH
 Key-based authentication enabled.
 
 ```bash
-ssh marttik@192.168.101.112
+ssh marttik@192.168.101.12
 ```
 
 --- 

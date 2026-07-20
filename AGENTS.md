@@ -100,7 +100,7 @@ Keep README focused on this repository.
 ## Deployment and ops notes
 - Domain is `markka.net` and `CNAME` is present.
 - Hosting/deploy is GitHub Pages (static files from repo).
-- DNS and email routing handled via Cloudflare/Gmail per project docs.
+- DNS is handled via Cloudflare; email routing is handled via Microsoft 365 per project docs.
 
 ## Editing safety
 - This repo may be dirty; do not revert unrelated changes.

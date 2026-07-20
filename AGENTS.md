@@ -1,6 +1,26 @@
-# ADENTS.md
+# AGENTS.md
 
 Guidelines and context for future coding agents working on `markka.net`.
+
+## Documentation responsibilities
+
+This repository owns the implementation.
+
+The central documentation repository (`Browleri/documentation-repo`) owns:
+
+- infrastructure documentation
+- architecture documentation
+- host documentation
+- service documentation
+- operational procedures
+- network documentation
+
+Whenever changes in this repository materially affect deployment,
+architecture, networking, operations, monitoring or maintenance,
+update the documentation repository as part of the same work item.
+
+Do not duplicate large documentation blocks here unless relevant for showcasing a project.
+Keep README focused on this repository.
 
 ## Project purpose
 - Personal portfolio site for Martti Koivisto (`markka.net`).

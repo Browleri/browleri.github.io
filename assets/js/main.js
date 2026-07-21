@@ -106,6 +106,14 @@ const translations = {
     projectMeta8: "Hackathon • Node.js • Email monitoring",
     projectDesc8:
       "Built an email monitoring service with a mock IMAP server and a Gmail integration for demonstration.",
+    projectTitle9: "Homelab infrastructure",
+    projectMeta9: "Self-hosted • Multiple devices • Docker",
+    projectDesc9:
+      "Documented and operated a multi-device home infrastructure spanning Docker hosts, a Raspberry Pi, and a desktop, with networking, remote access, and service monitoring.",
+    projectTitle10: "Airthings Monitor",
+    projectMeta10: "Raspberry Pi • Go • React/TypeScript",
+    projectDesc10:
+      "Built a self-hosted indoor air-quality monitor with BLE sensor readings, SQLite history, threshold-aware charts, and notifications.",
     projectLinkLabel: "View ReadMe",
     experienceHeading: "Professional experience",
     experience1Title: "Investment Analyst — Conficap Oy",
@@ -115,6 +123,10 @@ const translations = {
     experience2Title: "Finance Roles — London",
     experience2Meta: "10/2019 – 05/2020",
     experience2Body: "Early-career roles in financial analysis and reporting in fast-paced environments.",
+    experience3Title: "Junior Developer — PlantSys",
+    experience3Meta: "06/2026 – Present",
+    experience3Body:
+      "Assisting with the maintenance of current SaaS products and developing a new core SaaS system.",
     leadershipHeading: "Leadership & responsibility",
     leadership1Title: "Co-Founder — Suomen Metsä",
     leadership1Meta: "01/2022 – Present",
@@ -252,6 +264,14 @@ const translations = {
     projectMeta8: "Hackathon • Node.js • Sähköpostimonitorointi",
     projectDesc8:
       "Rakensin sähköpostien monitorointipalvelun, jossa oli mockattu IMAP-palvelin ja Gmail-integraatio demoa varten.",
+    projectTitle9: "Kotilaboratorion infrastruktuuri",
+    projectMeta9: "Itse ylläpidetty • Useita laitteita • Docker",
+    projectDesc9:
+      "Dokumentoin ja ylläpidin usean laitteen koti-infrastruktuuria, joka kattaa Docker-palvelimet, Raspberry Pi:n ja työpöytäkoneen sekä verkot, etäyhteydet ja palveluiden monitoroinnin.",
+    projectTitle10: "Airthings Monitor",
+    projectMeta10: "Raspberry Pi • Go • React/TypeScript",
+    projectDesc10:
+      "Rakensin itse ylläpidetyn sisäilman monitorointipalvelun BLE-anturilukemilla, SQLite-historialla, raja-arvokaavioilla ja ilmoituksilla.",
     projectLinkLabel: "Avaa ReadMe",
     experienceHeading: "Työkokemus",
     experience1Title: "Investment Analyst — Conficap Oy",
@@ -261,6 +281,10 @@ const translations = {
     experience2Title: "Finance Roles — London",
     experience2Meta: "10/2019 – 05/2020",
     experience2Body: "Ura alkuvaiheen roolit talousanalyysissa ja raportoinnissa nopeatahtisissa ympäristöissä.",
+    experience3Title: "Junior Developer — PlantSys",
+    experience3Meta: "06/2026 – Nykyhetki",
+    experience3Body:
+      "Osallistun nykyisten SaaS-tuotteiden ylläpitoon ja uuden ydin-SaaS-järjestelmän kehittämiseen.",
     leadershipHeading: "Luottamustehtävät",
     leadership1Title: "Co-Founder — Suomen Metsä",
     leadership1Meta: "01/2022 – Nykyhetki",
@@ -277,7 +301,7 @@ const translations = {
     stackHeading3: "Tietokannat & haku",
     stackHeading4: "Työkalut & käytännöt",
     stackItemWeb1: "REST API:t ja backend-palvelut Go:lla",
-    stackItemWeb2: "Frontend-perusteet (HTML, CSS, JavaScript)",
+    stackItemWeb2: "Frontend-perusteet (HTML, CSS, JavaScript, TypeScript, React)",
     stackItemWeb3: "Selkeät rajapinnat komponenttien välillä",
     stackItemDb1: "Relaatiotietokannat ja SQL-mallinnus",
     stackItemDb2: "Elasticsearch (käytännön projekti)",
